@@ -4,14 +4,44 @@
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-input-group.svg)](https://david-dm.org/tinper-bee/bee-input-group#info=devDependencies)
 
 
-react bee-input-group component for tinper-bee
+InputGroup 是包装 `FormControl` `InputGroupButton` `InputGroupAddon`的元素，实际应用中 `InputGroupAddon` `InputGroupButton`被集成到InputGroup中使用，格式如：`InputGroup.Addon` `InputGroup.Button`。
 
-some description...
 
-## 使用方法
+## 使用
 
+使用单独的bee-input-group包
+#### 组件引入
+先进行下载bee-input-group包
+```
+npm install --save bee-input-group
+```
+组件调用
 ```js
-
+import InputGroup from 'bee-input-group';
+import Button from 'bee-button'
+React.render(<div>
+	<InputGroup>
+ 		<InputGroup.Addon>.00</InputGroup.Addon>
+        <FormControl type="text" />
+    </InputGroup>
+    <InputGroup>
+ 		<InputGroup.Button>
+ 			<Button>toggle</Button>
+ 		</InputGroup.Button>
+        <FormControl type="text" />
+    </InputGroup>
+</div>, document.getElementById('target'));
+```
+#### 样式引入
+- 可以使用link引入dist目录下bee-input-group.css
+```
+<link rel="stylesheet" href="./node_modules/build/bee-input-group.css">
+```
+- 可以在js中import样式
+```js
+import "./node_modules/src/InputGroup.scss"
+//或是
+import "./node_modules/build/bee-input-group.css"
 ```
 
 

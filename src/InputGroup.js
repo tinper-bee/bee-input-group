@@ -22,6 +22,9 @@ class InputGroup extends React.Component {
   }
 }
 
+/**
+  * 将InputGroupAddon与InputGroupButton组件作为InputGroup的附属组件
+  */
 InputGroup.Addon = InputGroupAddon;
 InputGroup.Button = InputGroupButton;
 
