@@ -1,0 +1,10 @@
+@import "../node_modules/tinper-bee-core/scss/index.scss";
+@import "../src/InputGroup.scss";
+@import "../node_modules/bee-form-control/src/FormControl.scss";
+@import "../node_modules/bee-control-label/src/ControlLabel.scss";
+@import "../node_modules/bee-input-group-addon/src/InputGroupAddon.scss";
+@import "../node_modules/bee-input-group-button/src/InputGroupButton.scss";
+@import "../node_modules/bee-button/src/Button.scss";
+#tinperBeeDemo{
+	padding:20px;	
+}
