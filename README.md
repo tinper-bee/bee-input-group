@@ -1,6 +1,7 @@
 # bee-input-group
 [![npm version](https://img.shields.io/npm/v/bee-input-group.svg)](https://www.npmjs.com/package/bee-input-group)
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-input-group/master.svg)](https://travis-ci.org/tinper-bee/bee-input-group)
+[![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-input-group/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-input-group?branch=master)
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-input-group.svg)](https://david-dm.org/tinper-bee/bee-input-group#info=devDependencies)
 
 
