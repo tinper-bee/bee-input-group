@@ -18,7 +18,7 @@
  "repository": "http://github.com/tinper-bee/input-group",
  "bugs": "https://github.com/tinper-bee/input-group/issues",
  "license": "MIT",
- "main": "./build/index",
+ "main": "./build/bee-input-group.js",
  "config": {
   "port": 8000
  },

@@ -1,4 +1,4 @@
-import InputGroup from '../src';
+import InputGroup from '../build/index';
 import React, { Component } from 'react';
 import FormControl from 'bee-form-control';
 import Button from 'bee-button';
