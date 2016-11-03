@@ -1,10 +1,17 @@
 @charset "UTF-8";
 /*  IMAGES  */
 /* 默认颜色 */
+<<<<<<< HEAD
 /* 主题颜色放入 minxin-themeColors.scss
 $color-primary: $palette-indigo-500 !default;
 $color-primary-dark: $palette-indigo-700 !default;
 $color-accent: $palette-pink-A200 !default;
+=======
+/* 主题颜色放入 minxin-themeColors.scss
+$color-primary: $palette-indigo-500 !default;
+$color-primary-dark: $palette-indigo-700 !default;
+$color-accent: $palette-pink-A200 !default;
+>>>>>>> c011692d7da1bfeccd2cce5c7f8064b8b593f641
 */
 /* 客户化 */
 /* 波纹效果 */

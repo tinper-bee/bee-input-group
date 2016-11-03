@@ -1,2 +1,1 @@
-import InputGroup from './InputGroup';
-export default InputGroup ;
+module.exports = require('./InputGroup');
