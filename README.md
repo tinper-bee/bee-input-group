@@ -2,7 +2,6 @@
 [![npm version](https://img.shields.io/npm/v/bee-input-group.svg)](https://www.npmjs.com/package/bee-input-group)
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-input-group/master.svg)](https://travis-ci.org/tinper-bee/bee-input-group)
 [![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-input-group/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-input-group?branch=master)
-[![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-input-group.svg)](https://david-dm.org/tinper-bee/bee-input-group#info=devDependencies)
 
 
 InputGroup 是包装 `FormControl` `InputGroupButton` `InputGroupAddon`的元素，实际应用中 `InputGroupAddon` `InputGroupButton`被集成到InputGroup中使用，格式如：`InputGroup.Addon` `InputGroup.Button`。
