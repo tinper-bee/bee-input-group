@@ -1,22 +1,22 @@
-import classNames from 'classnames';
+import classnames from 'classnames';
 import React from 'react';
 
 import InputGroupAddon from 'bee-input-group-addon';
 import InputGroupButton from 'bee-input-group-button';
 
+const defaultProps = {
+  clsPrefix: 'u-input-group'
+}
 
 class InputGroup extends React.Component {
   render() {
-    const { className, ...others } = this.props;
+    const { className,clsPrefix, ...others } = this.props;
 
-    let classes = {
-    	'input-group' : true
-    }
 
     return (
       <span
         {...others}
-        className={classNames(className, classes)}
+        className={classnames(className, clsPrefix)}
       />
     );
   }
@@ -27,5 +27,5 @@ class InputGroup extends React.Component {
   */
 InputGroup.Addon = InputGroupAddon;
 InputGroup.Button = InputGroupButton;
-
+InputGroup.defaultProps = defaultProps;
 export default InputGroup;

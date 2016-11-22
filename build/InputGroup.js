@@ -34,6 +34,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
+var defaultProps = {
+  clsPrefix: 'u-input-group'
+};
+
 var InputGroup = function (_React$Component) {
   _inherits(InputGroup, _React$Component);
 
@@ -46,15 +50,12 @@ var InputGroup = function (_React$Component) {
   InputGroup.prototype.render = function render() {
     var _props = this.props;
     var className = _props.className;
+    var clsPrefix = _props.clsPrefix;
 
-    var others = _objectWithoutProperties(_props, ['className']);
-
-    var classes = {
-      'input-group': true
-    };
+    var others = _objectWithoutProperties(_props, ['className', 'clsPrefix']);
 
     return _react2["default"].createElement('span', _extends({}, others, {
-      className: (0, _classnames2["default"])(className, classes)
+      className: (0, _classnames2["default"])(className, clsPrefix)
     }));
   };
 
@@ -68,6 +69,6 @@ var InputGroup = function (_React$Component) {
 
 InputGroup.Addon = _beeInputGroupAddon2["default"];
 InputGroup.Button = _beeInputGroupButton2["default"];
-
+InputGroup.defaultProps = defaultProps;
 exports["default"] = InputGroup;
 module.exports = exports['default'];

@@ -34,11 +34,11 @@
   },
   "dependencies": {
     "bee-button": "0.0.6",
-    "bee-control-label": "0.0.2",
-    "bee-form-control": "0.0.4",
-    "bee-form-group": "^1.0.4",
-    "bee-input-group-addon": "0.0.4",
-    "bee-input-group-button": "0.0.4",
+    "bee-control-label": "0.1.0",
+    "bee-form-control": "^0.1.0",
+    "bee-form-group": "^1.0.5",
+    "bee-input-group-addon": "^0.1.0",
+    "bee-input-group-button": "^0.1.0",
     "classnames": "^2.2.5",
     "tinper-bee-core": "0.0.6"
   },

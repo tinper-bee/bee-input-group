@@ -1,11 +1,11 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
 
-.input-group {
+.u-input-group {
 	position: relative;
     display: table;
     border-collapse: separate;
-	.form-control {
+	.u-form-control {
 		position: relative;
 	    z-index: 2;
 	    float: left;

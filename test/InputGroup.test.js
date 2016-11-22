@@ -8,16 +8,16 @@ import InputGroup from '../src/index';
 describe('Enzyme Shallow', function() {
 	it('InputGroup should be exist', function() {
 		let inputgroup = shallow(<InputGroup/>);
-		expect(inputgroup.hasClass('input-group')).to.equal(true);
+		expect(inputgroup.hasClass('u-input-group')).to.equal(true);
 	})
 })
 describe('InputGroup的附属组件', function() {
 	it('InputGroupButton 作为 InputGroup的附属组件Button', function() {
 		let inputgroupbutton = shallow(<InputGroup.Button/>);
-		expect(inputgroupbutton.hasClass('input-group-btn')).to.equal(true);
+		expect(inputgroupbutton.hasClass('u-input-group-btn')).to.equal(true);
 	})
 	it('InputGroupAddon 作为 InputGroup的附属组件Addon', function() {
 		let inputgroupaddon = shallow(<InputGroup.Addon/>);
-		expect(inputgroupaddon.hasClass('input-group-addon')).to.equal(true);
+		expect(inputgroupaddon.hasClass('u-input-group-addon')).to.equal(true);
 	})
 })
