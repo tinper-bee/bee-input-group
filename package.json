@@ -1,6 +1,6 @@
 {
   "name": "bee-input-group",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "input-group ui component for react",
   "keywords": [
     "react",
@@ -18,7 +18,7 @@
   "repository": "http://github.com/tinper-bee/input-group",
   "bugs": "https://github.com/tinper-bee/input-group/issues",
   "license": "MIT",
-  "main": "./build/bee-input-group.js",
+  "main": "./build/index.js",
   "config": {
     "port": 8000
   },
