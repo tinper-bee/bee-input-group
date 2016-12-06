@@ -46,10 +46,7 @@ import "./node_modules/build/bee-input-group.css"
 
 
 
-## API
 
-|参数|说明|类型|默认值|
-|:--|:---:|:--:|---:|
 
 #### 开发调试
 
