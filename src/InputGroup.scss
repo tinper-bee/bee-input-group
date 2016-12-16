@@ -1,10 +1,17 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
+@import "../node_modules/bee-input-group-addon/src/InputGroupAddon.scss";
+@import "../node_modules/bee-input-group-button/src/InputGroupButton.scss";
 
 .u-input-group {
 	position: relative;
     display: table;
     border-collapse: separate;
+    .u-input-group-btn .u-button{
+    	border: 1px solid #ccc;
+    	padding: 6px 12px;
+    	line-height: 1.68;
+    }
 	.u-form-control {
 		position: relative;
 	    z-index: 2;

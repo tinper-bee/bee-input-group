@@ -1,6 +1,6 @@
 {
   "name": "bee-input-group",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "input-group ui component for react",
   "keywords": [
     "react",
@@ -37,8 +37,8 @@
     "bee-control-label": "latest",
     "bee-form-control": "latest",
     "bee-form-group": "latest",
-    "bee-input-group-addon": "^0.1.2",
-    "bee-input-group-button": "^0.1.1",
+    "bee-input-group-addon": "latest",
+    "bee-input-group-button": "latest",
     "classnames": "^2.2.5",
     "tinper-bee-core": "latest"
   },
@@ -49,6 +49,8 @@
     "react-addons-test-utils": "15.3.2",
     "react-dom": "~0.14.0",
     "console-polyfill": "~0.2.1",
-    "es5-shim": "~4.1.10"
+    "es5-shim": "~4.1.10",
+    "bee-panel": "latest",
+    "bee-layout": "latest"
   }
 }
