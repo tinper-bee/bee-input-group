@@ -15,7 +15,7 @@ const CARETUP = <i className="uf uf-chevronarrowup"></i>;
 
 
 /**
- * @title 
+ * @title InputGroup 两边是可选Addon
  * @description 
  */
 class Demo1 extends Component {
@@ -43,7 +43,7 @@ class Demo1 extends Component {
 		)
 	}
 }/**
- * @title 
+ * @title InputGroup 两边是可选Button
  * @description 
  */
 class Demo2 extends Component {
@@ -78,7 +78,7 @@ class Demo2 extends Component {
 	        </div>
 		)
 	}
-}var DemoArray = [{"example":<Demo1 />,"title":" ","code":"/**\n * @title \n * @description \n */\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t        \t<FormGroup>\n\t        \t\t<InputGroup>\n\t\t\t\t \t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t        <InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t    </InputGroup>\n\n\t\t\t\t    <InputGroup>\n\t\t\t\t \t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t    </InputGroup>\n\n\t\t\t\t    <InputGroup>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t        <InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t    </InputGroup>\n\t        \t</FormGroup>\t\t\n\t        </div>\n\t\t)\n\t}\n}","desc":" "},{"example":<Demo2 />,"title":" ","code":"/**\n * @title \n * @description \n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t        \t<FormGroup>\n\t\t\t\t    <InputGroup>\n\t\t\t\t \t\t<InputGroup.Button>\n\t\t\t\t \t\t\t<Button>test</Button>\n\t\t\t\t \t\t</InputGroup.Button>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t    </InputGroup>\n\n\t\t\t\t    <InputGroup>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t        <InputGroup.Button shape=\"border\">\n\t\t\t\t \t\t\t<Button>test</Button>\n\t\t\t\t \t\t</InputGroup.Button>\n\t\t\t\t    </InputGroup>\n\n\t\t\t\t    <InputGroup>\n\t\t\t\t    \t<InputGroup.Button>\n\t\t\t\t \t\t\t<Button>test</Button>\n\t\t\t\t \t\t</InputGroup.Button>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t        <InputGroup.Button>\n\t\t\t\t \t\t\t<Button>test</Button>\n\t\t\t\t \t\t</InputGroup.Button>\n\t\t\t\t    </InputGroup>\n\t        \t</FormGroup>\t\t\n\t        </div>\n\t\t)\n\t}\n}","desc":" "}]
+}var DemoArray = [{"example":<Demo1 />,"title":" InputGroup 两边是可选Add","code":"/**\n * @title InputGroup 两边是可选Addon\n * @description \n */\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t        \t<FormGroup>\n\t        \t\t<InputGroup>\n\t\t\t\t \t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t        <InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t    </InputGroup>\n\n\t\t\t\t    <InputGroup>\n\t\t\t\t \t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t    </InputGroup>\n\n\t\t\t\t    <InputGroup>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t        <InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t    </InputGroup>\n\t        \t</FormGroup>\t\t\n\t        </div>\n\t\t)\n\t}\n}","desc":" "},{"example":<Demo2 />,"title":" InputGroup 两边是可选But","code":"/**\n * @title InputGroup 两边是可选Button\n * @description \n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t        \t<FormGroup>\n\t\t\t\t    <InputGroup>\n\t\t\t\t \t\t<InputGroup.Button>\n\t\t\t\t \t\t\t<Button>test</Button>\n\t\t\t\t \t\t</InputGroup.Button>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t    </InputGroup>\n\n\t\t\t\t    <InputGroup>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t        <InputGroup.Button shape=\"border\">\n\t\t\t\t \t\t\t<Button>test</Button>\n\t\t\t\t \t\t</InputGroup.Button>\n\t\t\t\t    </InputGroup>\n\n\t\t\t\t    <InputGroup>\n\t\t\t\t    \t<InputGroup.Button>\n\t\t\t\t \t\t\t<Button>test</Button>\n\t\t\t\t \t\t</InputGroup.Button>\n\t\t\t\t        <FormControl type=\"text\" />\n\t\t\t\t        <InputGroup.Button>\n\t\t\t\t \t\t\t<Button>test</Button>\n\t\t\t\t \t\t</InputGroup.Button>\n\t\t\t\t    </InputGroup>\n\t        \t</FormGroup>\t\t\n\t        </div>\n\t\t)\n\t}\n}","desc":" "}]
 
 
 class Demo extends Component {

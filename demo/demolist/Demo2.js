@@ -1,5 +1,5 @@
 /**
- * @title 
+ * @title InputGroup 两边是可选Button
  * @description 
  */
 class Demo2 extends Component {

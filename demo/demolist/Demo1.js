@@ -1,5 +1,5 @@
 /**
- * @title 
+ * @title InputGroup 两边是可选Addon
  * @description 
  */
 class Demo1 extends Component {
