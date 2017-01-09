@@ -17,7 +17,7 @@ class Demo2 extends Component {
 				    <InputGroup>
 				        <FormControl type="text" />
 				        <InputGroup.Button shape="border">
-				 			<Button>test</Button>
+				 			<Button><span className="uf uf-search"> </span></Button>
 				 		</InputGroup.Button>
 				    </InputGroup>
 

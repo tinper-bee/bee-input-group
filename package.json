@@ -33,8 +33,7 @@
     "coveralls": "bee-tools run coverage"
   },
   "dependencies": {
-    "bee-button": "^0.2.2",
-    "bee-control-label": "latest",
+    "bee-button": "latest",
     "bee-form-control": "latest",
     "bee-form-group": "latest",
     "bee-input-group-addon": "latest",
