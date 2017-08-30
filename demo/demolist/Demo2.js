@@ -3,6 +3,14 @@
  * @description 
  */
 
+import React, { Component } from 'react';
+import FormGroup from 'bee-form-group';
+import FormControl from 'bee-form-control';
+import Dropdown from 'bee-dropdown';
+import Button from 'bee-button';
+import Menu, { Item as MenuItem, Divider, SubMenu, MenuItemGroup } from 'bee-menu';
+import InputGroup from '../../src';
+
 function onSelect({ key }) {
 	console.log(`${key} selected`);
 
@@ -75,3 +83,5 @@ class Demo2 extends Component {
 		)
 	}
 }
+
+export default Demo2;

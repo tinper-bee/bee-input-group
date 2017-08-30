@@ -2,6 +2,12 @@
  * @title InputGroup 两边是可选Addon
  * @description 
  */
+
+import React, { Component } from 'react';
+import FormGroup from 'bee-form-group';
+import FormControl from 'bee-form-control';
+import InputGroup from '../../src';
+
 class Demo1 extends Component {
 	render () {
 		return (
@@ -27,3 +33,5 @@ class Demo1 extends Component {
 		)
 	}
 }
+
+export default Demo1;

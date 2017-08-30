@@ -1,6 +1,6 @@
 {
   "name": "bee-input-group",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "input-group ui component for react",
   "keywords": [
     "react",
@@ -35,7 +35,7 @@
   "dependencies": {
     "bee-button": "latest",
     "bee-dropdown": "^0.2.1",
-    "bee-form-control": "latest",
+    "bee-form-control": "^0.1.7",
     "bee-form-group": "latest",
     "bee-input-group-addon": "latest",
     "bee-input-group-button": "latest",
