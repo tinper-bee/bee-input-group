@@ -8,7 +8,7 @@ import FormGroup from 'bee-form-group';
 import FormControl from 'bee-form-control';
 import InputGroup from '../src';
 import Dropdown from 'bee-dropdown';
-import Menu, { Item as MenuItem, Divider, SubMenu, MenuItemGroup } from 'bee-menu';
+import Menu, { Item as MenuItem, Divider, SubMenu, MenuItemGroup } from 'bee-menus';
 
 const CARET = <i className="uf uf-chevronarrowdown"></i>;
 

@@ -8,7 +8,7 @@ import FormGroup from 'bee-form-group';
 import FormControl from 'bee-form-control';
 import Dropdown from 'bee-dropdown';
 import Button from 'bee-button';
-import Menu, { Item as MenuItem, Divider, SubMenu, MenuItemGroup } from 'bee-menu';
+import Menu, { Item as MenuItem, Divider, SubMenu, MenuItemGroup } from 'bee-menus';
 import InputGroup from '../../src';
 
 function onSelect({ key }) {
