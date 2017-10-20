@@ -1,7 +1,7 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
 @import "../node_modules/bee-input-group-addon/src/InputGroupAddon.scss";
-@import "../node_modules/bee-input-group-button/src/InputGroupButton.scss";
+@import "./src/InputGroupButton.scss";
 
 .u-input-group {
 	position: relative;

@@ -1,6 +1,6 @@
 {
  "name": "bee-input-group",
- "version": "1.0.0",
+ "version": "1.0.1",
  "description": "input-group ui component for react",
  "keywords": [
   "react",
@@ -34,7 +34,6 @@
  },
  "dependencies": {
   "bee-input-group-addon": "latest",
-  "bee-input-group-button": "latest",
   "classnames": "^2.2.5",
   "tinper-bee-core": "latest"
  },

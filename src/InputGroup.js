@@ -2,7 +2,7 @@ import classnames from 'classnames';
 import React from 'react';
 
 import InputGroupAddon from 'bee-input-group-addon';
-import InputGroupButton from 'bee-input-group-button';
+import InputGroupButton from './InputGroupButton';
 
 const defaultProps = {
   clsPrefix: 'u-input-group',
