@@ -14,7 +14,6 @@
     }
 	.u-form-control {
 		position: relative;
-	    z-index: 2;
 	    float: left;
 	    width: 100%;
 	    margin-bottom: 0;
@@ -39,8 +38,8 @@
 			position: absolute;
 		    top: 2px;
 		    bottom: 0;
-		    z-index: 2;
-		    right: 20px;
+			right: 5px;
+			min-width: 20px;
 		}
 		.u-form-control:not(:last-child) {
 		    padding-right: 23px;

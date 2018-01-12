@@ -1,6 +1,5 @@
 import classnames from 'classnames';
 import React from 'react';
-
 import InputGroupAddon from 'bee-input-group-addon';
 import InputGroupButton from './InputGroupButton';
 

@@ -9,7 +9,6 @@
     display: table-cell;
     .u-button{
     	position: relative;
-
     }
 }
 
@@ -23,12 +22,8 @@
     border-top-left-radius: 0;
 }
 .u-input-group-btn:last-child>button, .u-input-group-btn:last-child>.btn-group {
-    z-index: 2;
     margin-left: -1px;
 }
 .u-input-group-btn:first-child>button, .u-input-group-btn:first-child>.btn-group {
     margin-right: -1px;
-}
-.u-input-group-btn>button:active, .u-input-group-btn>.btn:focus, .u-input-group-btn>button:hover {
-    z-index: 2;
 }
