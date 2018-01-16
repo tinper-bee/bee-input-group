@@ -7382,11 +7382,8 @@ input.u-button[type="submit"] {
     transform-origin: 0% 100%;
     transform: scaleY(0); } }
 
-#tinperBeeDemo {
-  padding: 20px; }
-
-.demo-input-group .input-group {
-  margin-top: 10px; }
+.demo-input-group .u-input-group {
+  margin-bottom: 5px; }
 
 .demo-input-group .u-input-group {
   margin-bottom: 5px; }

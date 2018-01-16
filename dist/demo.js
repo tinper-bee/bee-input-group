@@ -62,26 +62,6 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _beeFormGroup = __webpack_require__(64);
-	
-	var _beeFormGroup2 = _interopRequireDefault(_beeFormGroup);
-	
-	var _beeFormControl = __webpack_require__(66);
-	
-	var _beeFormControl2 = _interopRequireDefault(_beeFormControl);
-	
-	var _src = __webpack_require__(70);
-	
-	var _src2 = _interopRequireDefault(_src);
-	
-	var _beeDropdown = __webpack_require__(75);
-	
-	var _beeDropdown2 = _interopRequireDefault(_beeDropdown);
-	
-	var _beeMenus = __webpack_require__(90);
-	
-	var _beeMenus2 = _interopRequireDefault(_beeMenus);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
 	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -92,11 +72,11 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 	
-	var CARET = _react2['default'].createElement('i', { className: 'uf uf-chevronarrowdown' });
+	var CARET = _react2['default'].createElement('i', { className: 'uf uf-arrow-down' });
 	
-	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-chevronarrowup' });
+	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(105);var Demo2 = __webpack_require__(106);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " InputGroup 两边是可选Add", "code": "/**\n * @title InputGroup 两边是可选Addon\n * @description \n */\nimport React, { Component } from 'react';\nimport FormControl from 'bee-form-control';\nimport InputGroup from 'bee-input-group';\n\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t\t\t\t<InputGroup >\n\t\t\t\t\t<InputGroup.Addon >.00</InputGroup.Addon>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t</InputGroup>\t\t\n\t        </div>\n\t\t)\n\t}\n}\n", "desc": " " }, { "example": _react2['default'].createElement(Demo2, null), "title": " InputGroup 两边是可选But", "code": "/**\n * @title InputGroup 两边是可选Button\n * @description \n */\n\nimport React, { Component } from 'react';\nimport FormControl from 'bee-form-control';\nimport Dropdown from 'bee-dropdown';\nimport Button from 'bee-button';\nimport Menu, { Item as MenuItem, Divider, SubMenu, MenuItemGroup } from 'bee-menus';\nimport InputGroup from 'bee-input-group';\n\nfunction onSelect({ key }) {\n\tconsole.log(`${key} selected`);\n\n}\n\nfunction onVisibleChange(visible) {\n\tconsole.log(visible);\n}\n\nconst menu1 = (\n\t<Menu\n\t\tmultiple\n\t\tonSelect={onSelect}>\n\t\t<MenuItem key=\"1\">借款合同</MenuItem>\n\t\t<MenuItem key=\"2\">抵/质押合同</MenuItem>\n\t\t<MenuItem key=\"3\">担保合同</MenuItem>\n\t\t<MenuItem key=\"4\">联保合同</MenuItem>\n\t\t<Divider />\n\t\t<MenuItem key=\"5\">合同审批</MenuItem>\n\t\t<MenuItem key=\"6\">抵/质押合同跟踪</MenuItem>\n\t</Menu>\n);\nclass Demo2 extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>test</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</InputGroup>\n\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Button shape=\"border\">\n\t\t\t\t\t\t<Dropdown\n\t\t\t\t\t\t\ttrigger={['click']}\n\t\t\t\t\t\t\toverlay={menu1}\n\t\t\t\t\t\t\tanimation=\"slide-up\"\n\t\t\t\t\t\t\tonVisibleChange={onVisibleChange}\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\t<Button shape=\"border\">带有分割线的下拉 <span className=\"uf uf-arrow-down\"> </span></Button>\n\t\t\t\t\t\t</Dropdown>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button><span className=\"uf uf-search\"> </span></Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup simple>\n\t\t\t\t\t<FormControl style={{ width: 300 }} type=\"text\" />\n\t\t\t\t\t<InputGroup.Button shape=\"border\">\n\t\t\t\t\t\t<span className=\"uf uf-search\"> </span>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>test</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>test</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " " }];
+	var Demo1 = __webpack_require__(64);var Demo2 = __webpack_require__(74);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " InputGroup 两边是可选Add", "code": "/**\n * @title InputGroup 两边是可选Addon\n * @description \n */\nimport React, { Component } from 'react';\nimport { InputGroup, FormControl } from 'tinper-bee';\n\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t\t\t\t<InputGroup >\n\t\t\t\t\t<InputGroup.Addon >.00</InputGroup.Addon>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t</InputGroup>\t\t\n\t        </div>\n\t\t)\n\t}\n}\n", "desc": " " }, { "example": _react2['default'].createElement(Demo2, null), "title": " InputGroup 两边是可选But", "code": "/**\n * @title InputGroup 两边是可选Button\n * @description \n */\n\nimport React, { Component } from 'react';\nimport { InputGroup, Menu, Button, Dropdown, FormControl } from 'tinper-bee';\n\nlet MenuItem = Menu.Item;\nlet Divider = Menu.Divider;\nlet SubMenu = Menu.SubMenu;\nlet MenuItemGroup = Menu.MenuItemGroup;\n\n\nfunction onSelect({ key }) {\n\tconsole.log(`${key} selected`);\n\n}\n\nfunction onVisibleChange(visible) {\n\tconsole.log(visible);\n}\n\nconst menu1 = (\n\t<Menu\n\t\tmultiple\n\t\tonSelect={onSelect}>\n\t\t<MenuItem key=\"1\">借款合同</MenuItem>\n\t\t<MenuItem key=\"2\">抵/质押合同</MenuItem>\n\t\t<MenuItem key=\"3\">担保合同</MenuItem>\n\t\t<MenuItem key=\"4\">联保合同</MenuItem>\n\t\t<Divider />\n\t\t<MenuItem key=\"5\">合同审批</MenuItem>\n\t\t<MenuItem key=\"6\">抵/质押合同跟踪</MenuItem>\n\t</Menu>\n);\nclass Demo2 extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>test</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</InputGroup>\n\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Button shape=\"border\">\n\t\t\t\t\t\t<Dropdown\n\t\t\t\t\t\t\ttrigger={['click']}\n\t\t\t\t\t\t\toverlay={menu1}\n\t\t\t\t\t\t\tanimation=\"slide-up\"\n\t\t\t\t\t\t\tonVisibleChange={onVisibleChange}\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\t<Button shape=\"border\">带有分割线的下拉 <span className=\"uf uf-arrow-down\"> </span></Button>\n\t\t\t\t\t\t</Dropdown>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button><span className=\"uf uf-search\"> </span></Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup simple>\n\t\t\t\t\t<FormControl style={{ width: 300 }} type=\"text\" />\n\t\t\t\t\t<InputGroup.Button shape=\"border\">\n\t\t\t\t\t\t<span className=\"uf uf-search\"> </span>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>test</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>test</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " " }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -122,16 +102,22 @@
 	            title = _props.title,
 	            example = _props.example,
 	            code = _props.code,
-	            desc = _props.desc;
+	            desc = _props.desc,
+	            scss_code = _props.scss_code;
 	
 	        var caret = this.state.open ? CARETUP : CARET;
 	        var text = this.state.open ? "隐藏代码" : "查看代码";
 	
-	        var footer = _react2['default'].createElement(
-	            _beeButton2['default'],
-	            { shape: 'block', onClick: this.handleClick },
-	            caret,
-	            text
+	        var header = _react2['default'].createElement(
+	            'div',
+	            null,
+	            example,
+	            _react2['default'].createElement(
+	                _beeButton2['default'],
+	                { style: { "marginTop": "10px" }, shape: 'block', onClick: this.handleClick },
+	                caret,
+	                text
+	            )
 	        );
 	        return _react2['default'].createElement(
 	            _beeLayout.Col,
@@ -148,7 +134,7 @@
 	            ),
 	            _react2['default'].createElement(
 	                _beePanel.Panel,
-	                { collapsible: true, expanded: this.state.open, colors: 'bordered', header: example, footer: footer, footerStyle: { padding: 0, borderColor: "transparent" } },
+	                { collapsible: true, headerContent: true, expanded: this.state.open, colors: 'bordered', header: header, footerStyle: { padding: 0 } },
 	                _react2['default'].createElement(
 	                    'pre',
 	                    null,
@@ -157,7 +143,16 @@
 	                        { className: 'hljs javascript' },
 	                        code
 	                    )
-	                )
+	                ),
+	                !!scss_code ? _react2['default'].createElement(
+	                    'pre',
+	                    null,
+	                    _react2['default'].createElement(
+	                        'code',
+	                        { className: 'hljs css' },
+	                        scss_code
+	                    )
+	                ) : null
 	            )
 	        );
 	    };
@@ -180,7 +175,7 @@
 	            null,
 	            DemoArray.map(function (child, index) {
 	
-	                return _react2['default'].createElement(Demo, { example: child.example, title: child.title, code: child.code, desc: child.desc, key: index });
+	                return _react2['default'].createElement(Demo, { example: child.example, title: child.title, code: child.code, scss_code: child.scss_code, desc: child.desc, key: index });
 	            })
 	        );
 	    };
@@ -4602,12 +4597,18 @@
 	      elFuturePos = (0, _getElFuturePos2['default'])(elRegion, refNodeRegion, points, offset, targetOffset);
 	      _utils2['default'].mix(newElRegion, elFuturePos);
 	    }
-	
-	    // 检查反下后的位置是否可以放下了
-	    // 如果仍然放不下只有指定了可以调整当前方向才调整
-	    newOverflowCfg.adjustX = overflow.adjustX && isFailX(elFuturePos, elRegion, visibleRect);
-	
-	    newOverflowCfg.adjustY = overflow.adjustY && isFailY(elFuturePos, elRegion, visibleRect);
+	    var isStillFailX = isFailX(elFuturePos, elRegion, visibleRect);
+	    var isStillFailY = isFailY(elFuturePos, elRegion, visibleRect);
+	    // 检查反下后的位置是否可以放下了，如果仍然放不下：
+	    // 1. 复原修改过的定位参数
+	    if (isStillFailX || isStillFailY) {
+	      points = align.points;
+	      offset = align.offset || [0, 0];
+	      targetOffset = align.targetOffset || [0, 0];
+	    }
+	    // 2. 只有指定了可以调整当前方向才调整
+	    newOverflowCfg.adjustX = overflow.adjustX && isStillFailX;
+	    newOverflowCfg.adjustY = overflow.adjustY && isStillFailY;
 	
 	    // 确实要调整，甚至可能会调整高度宽度
 	    if (newOverflowCfg.adjustX || newOverflowCfg.adjustY) {
@@ -6200,16 +6201,90 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+		value: true
 	});
 	
-	var _FormGroup = __webpack_require__(65);
+	var _react = __webpack_require__(4);
 	
-	var _FormGroup2 = _interopRequireDefault(_FormGroup);
+	var _react2 = _interopRequireDefault(_react);
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	var _beeFormControl = __webpack_require__(65);
 	
-	exports["default"] = _FormGroup2["default"];
+	var _beeFormControl2 = _interopRequireDefault(_beeFormControl);
+	
+	var _src = __webpack_require__(69);
+	
+	var _src2 = _interopRequireDefault(_src);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title InputGroup 两边是可选Addon
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	
+	var Demo1 = function (_Component) {
+		_inherits(Demo1, _Component);
+	
+		function Demo1() {
+			_classCallCheck(this, Demo1);
+	
+			return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+		}
+	
+		Demo1.prototype.render = function render() {
+			return _react2['default'].createElement(
+				'div',
+				{ className: 'demo-input-group' },
+				_react2['default'].createElement(
+					_src2['default'],
+					null,
+					_react2['default'].createElement(
+						_src2['default'].Addon,
+						null,
+						'.00'
+					),
+					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
+					_react2['default'].createElement(
+						_src2['default'].Addon,
+						null,
+						'.00'
+					)
+				),
+				_react2['default'].createElement(
+					_src2['default'],
+					null,
+					_react2['default'].createElement(
+						_src2['default'].Addon,
+						null,
+						'.00'
+					),
+					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' })
+				),
+				_react2['default'].createElement(
+					_src2['default'],
+					null,
+					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
+					_react2['default'].createElement(
+						_src2['default'].Addon,
+						null,
+						'.00'
+					)
+				)
+			);
+		};
+	
+		return Demo1;
+	}(_react.Component);
+	
+	exports['default'] = Demo1;
 	module.exports = exports['default'];
 
 /***/ }),
@@ -6219,83 +6294,16 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-					value: true
+	  value: true
 	});
 	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	var _FormControl = __webpack_require__(66);
 	
-	var _classnames = __webpack_require__(3);
-	
-	var _classnames2 = _interopRequireDefault(_classnames);
-	
-	var _react = __webpack_require__(4);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _propTypes = __webpack_require__(5);
-	
-	var _propTypes2 = _interopRequireDefault(_propTypes);
+	var _FormControl2 = _interopRequireDefault(_FormControl);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 	
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-	
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
-	
-	var propTypes = {
-					validationState: _propTypes2["default"].oneOf(['success', 'warning', 'error'])
-	};
-	var defaultProps = {
-					clsPrefix: 'u-form-group'
-	};
-	
-	var FormGroup = function (_React$Component) {
-					_inherits(FormGroup, _React$Component);
-	
-					function FormGroup(props) {
-									_classCallCheck(this, FormGroup);
-	
-									return _possibleConstructorReturn(this, _React$Component.call(this, props));
-					}
-	
-					FormGroup.prototype.render = function render() {
-									var _props = this.props,
-									    validationState = _props.validationState,
-									    className = _props.className,
-									    children = _props.children,
-									    clsPrefix = _props.clsPrefix,
-									    others = _objectWithoutProperties(_props, ['validationState', 'className', 'children', 'clsPrefix']);
-	
-									var classes = {};
-	
-									if (validationState) {
-													classes['has-' + validationState] = true;
-									}
-	
-									var classNames = (0, _classnames2["default"])(clsPrefix, classes);
-	
-									return _react2["default"].createElement(
-													'div',
-													_extends({}, others, {
-																	className: (0, _classnames2["default"])(className, classNames)
-													}),
-													children
-									);
-					};
-	
-					return FormGroup;
-	}(_react2["default"].Component);
-	
-	FormGroup.propTypes = propTypes;
-	FormGroup.defaultProps = defaultProps;
-	
-	exports["default"] = FormGroup;
+	exports["default"] = _FormControl2["default"];
 	module.exports = exports['default'];
 
 /***/ }),
@@ -6308,25 +6316,6 @@
 	  value: true
 	});
 	
-	var _FormControl = __webpack_require__(67);
-	
-	var _FormControl2 = _interopRequireDefault(_FormControl);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-	
-	exports["default"] = _FormControl2["default"];
-	module.exports = exports['default'];
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
 	var _react = __webpack_require__(4);
@@ -6337,7 +6326,7 @@
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _beeIcon = __webpack_require__(68);
+	var _beeIcon = __webpack_require__(67);
 	
 	var _beeIcon2 = _interopRequireDefault(_beeIcon);
 	
@@ -6500,7 +6489,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6509,7 +6498,7 @@
 	  value: true
 	});
 	
-	var _Icon = __webpack_require__(69);
+	var _Icon = __webpack_require__(68);
 	
 	var _Icon2 = _interopRequireDefault(_Icon);
 	
@@ -6519,7 +6508,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6598,15 +6587,15 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(71);
+	module.exports = __webpack_require__(70);
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6625,11 +6614,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _beeInputGroupAddon = __webpack_require__(72);
+	var _beeInputGroupAddon = __webpack_require__(71);
 	
 	var _beeInputGroupAddon2 = _interopRequireDefault(_beeInputGroupAddon);
 	
-	var _InputGroupButton = __webpack_require__(74);
+	var _InputGroupButton = __webpack_require__(73);
 	
 	var _InputGroupButton2 = _interopRequireDefault(_InputGroupButton);
 	
@@ -6686,7 +6675,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6695,7 +6684,7 @@
 	  value: true
 	});
 	
-	var _InputGroupAddon = __webpack_require__(73);
+	var _InputGroupAddon = __webpack_require__(72);
 	
 	var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
 	
@@ -6705,7 +6694,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6769,7 +6758,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6829,6 +6818,220 @@
 	
 	InputGroupButton.defaultProps = defaultProps;
 	exports['default'] = InputGroupButton;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(4);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _beeFormControl = __webpack_require__(65);
+	
+	var _beeFormControl2 = _interopRequireDefault(_beeFormControl);
+	
+	var _beeDropdown = __webpack_require__(75);
+	
+	var _beeDropdown2 = _interopRequireDefault(_beeDropdown);
+	
+	var _beeButton = __webpack_require__(62);
+	
+	var _beeButton2 = _interopRequireDefault(_beeButton);
+	
+	var _beeMenus = __webpack_require__(90);
+	
+	var _beeMenus2 = _interopRequireDefault(_beeMenus);
+	
+	var _src = __webpack_require__(69);
+	
+	var _src2 = _interopRequireDefault(_src);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title InputGroup 两边是可选Button
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	var MenuItem = _beeMenus2['default'].Item;
+	var Divider = _beeMenus2['default'].Divider;
+	var SubMenu = _beeMenus2['default'].SubMenu;
+	var MenuItemGroup = _beeMenus2['default'].MenuItemGroup;
+	
+	function onSelect(_ref) {
+		var key = _ref.key;
+	
+		console.log(key + ' selected');
+	}
+	
+	function onVisibleChange(visible) {
+		console.log(visible);
+	}
+	
+	var menu1 = _react2['default'].createElement(
+		_beeMenus2['default'],
+		{
+			multiple: true,
+			onSelect: onSelect },
+		_react2['default'].createElement(
+			MenuItem,
+			{ key: '1' },
+			'\u501F\u6B3E\u5408\u540C'
+		),
+		_react2['default'].createElement(
+			MenuItem,
+			{ key: '2' },
+			'\u62B5/\u8D28\u62BC\u5408\u540C'
+		),
+		_react2['default'].createElement(
+			MenuItem,
+			{ key: '3' },
+			'\u62C5\u4FDD\u5408\u540C'
+		),
+		_react2['default'].createElement(
+			MenuItem,
+			{ key: '4' },
+			'\u8054\u4FDD\u5408\u540C'
+		),
+		_react2['default'].createElement(Divider, null),
+		_react2['default'].createElement(
+			MenuItem,
+			{ key: '5' },
+			'\u5408\u540C\u5BA1\u6279'
+		),
+		_react2['default'].createElement(
+			MenuItem,
+			{ key: '6' },
+			'\u62B5/\u8D28\u62BC\u5408\u540C\u8DDF\u8E2A'
+		)
+	);
+	
+	var Demo2 = function (_Component) {
+		_inherits(Demo2, _Component);
+	
+		function Demo2() {
+			_classCallCheck(this, Demo2);
+	
+			return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+		}
+	
+		Demo2.prototype.render = function render() {
+			return _react2['default'].createElement(
+				'div',
+				{ className: 'demo-input-group' },
+				_react2['default'].createElement(
+					_src2['default'],
+					null,
+					_react2['default'].createElement(
+						_src2['default'].Button,
+						null,
+						_react2['default'].createElement(
+							_beeButton2['default'],
+							null,
+							'test'
+						)
+					),
+					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' })
+				),
+				_react2['default'].createElement(
+					_src2['default'],
+					null,
+					_react2['default'].createElement(
+						_src2['default'].Button,
+						{ shape: 'border' },
+						_react2['default'].createElement(
+							_beeDropdown2['default'],
+							{
+								trigger: ['click'],
+								overlay: menu1,
+								animation: 'slide-up',
+								onVisibleChange: onVisibleChange
+							},
+							_react2['default'].createElement(
+								_beeButton2['default'],
+								{ shape: 'border' },
+								'\u5E26\u6709\u5206\u5272\u7EBF\u7684\u4E0B\u62C9 ',
+								_react2['default'].createElement(
+									'span',
+									{ className: 'uf uf-arrow-down' },
+									' '
+								)
+							)
+						)
+					),
+					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
+					_react2['default'].createElement(
+						_src2['default'].Button,
+						null,
+						_react2['default'].createElement(
+							_beeButton2['default'],
+							null,
+							_react2['default'].createElement(
+								'span',
+								{ className: 'uf uf-search' },
+								' '
+							)
+						)
+					)
+				),
+				_react2['default'].createElement(
+					_src2['default'],
+					{ simple: true },
+					_react2['default'].createElement(_beeFormControl2['default'], { style: { width: 300 }, type: 'text' }),
+					_react2['default'].createElement(
+						_src2['default'].Button,
+						{ shape: 'border' },
+						_react2['default'].createElement(
+							'span',
+							{ className: 'uf uf-search' },
+							' '
+						)
+					)
+				),
+				_react2['default'].createElement(
+					_src2['default'],
+					null,
+					_react2['default'].createElement(
+						_src2['default'].Button,
+						null,
+						_react2['default'].createElement(
+							_beeButton2['default'],
+							null,
+							'test'
+						)
+					),
+					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
+					_react2['default'].createElement(
+						_src2['default'].Button,
+						null,
+						_react2['default'].createElement(
+							_beeButton2['default'],
+							null,
+							'test'
+						)
+					)
+				)
+			);
+		};
+	
+		return Demo2;
+	}(_react.Component);
+	
+	exports['default'] = Demo2;
 	module.exports = exports['default'];
 
 /***/ }),
@@ -11495,308 +11698,6 @@
 	  }
 	};
 	
-	module.exports = exports['default'];
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(4);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _beeFormControl = __webpack_require__(66);
-	
-	var _beeFormControl2 = _interopRequireDefault(_beeFormControl);
-	
-	var _src = __webpack_require__(70);
-	
-	var _src2 = _interopRequireDefault(_src);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title InputGroup 两边是可选Addon
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-	
-	
-	var Demo1 = function (_Component) {
-		_inherits(Demo1, _Component);
-	
-		function Demo1() {
-			_classCallCheck(this, Demo1);
-	
-			return _possibleConstructorReturn(this, _Component.apply(this, arguments));
-		}
-	
-		Demo1.prototype.render = function render() {
-			return _react2['default'].createElement(
-				'div',
-				{ className: 'demo-input-group' },
-				_react2['default'].createElement(
-					_src2['default'],
-					null,
-					_react2['default'].createElement(
-						_src2['default'].Addon,
-						null,
-						'.00'
-					),
-					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
-					_react2['default'].createElement(
-						_src2['default'].Addon,
-						null,
-						'.00'
-					)
-				),
-				_react2['default'].createElement(
-					_src2['default'],
-					null,
-					_react2['default'].createElement(
-						_src2['default'].Addon,
-						null,
-						'.00'
-					),
-					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' })
-				),
-				_react2['default'].createElement(
-					_src2['default'],
-					null,
-					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
-					_react2['default'].createElement(
-						_src2['default'].Addon,
-						null,
-						'.00'
-					)
-				)
-			);
-		};
-	
-		return Demo1;
-	}(_react.Component);
-	
-	exports['default'] = Demo1;
-	module.exports = exports['default'];
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(4);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _beeFormControl = __webpack_require__(66);
-	
-	var _beeFormControl2 = _interopRequireDefault(_beeFormControl);
-	
-	var _beeDropdown = __webpack_require__(75);
-	
-	var _beeDropdown2 = _interopRequireDefault(_beeDropdown);
-	
-	var _beeButton = __webpack_require__(62);
-	
-	var _beeButton2 = _interopRequireDefault(_beeButton);
-	
-	var _beeMenus = __webpack_require__(90);
-	
-	var _beeMenus2 = _interopRequireDefault(_beeMenus);
-	
-	var _src = __webpack_require__(70);
-	
-	var _src2 = _interopRequireDefault(_src);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @title InputGroup 两边是可选Button
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @description 
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-	
-	function onSelect(_ref) {
-		var key = _ref.key;
-	
-		console.log(key + ' selected');
-	}
-	
-	function onVisibleChange(visible) {
-		console.log(visible);
-	}
-	
-	var menu1 = _react2['default'].createElement(
-		_beeMenus2['default'],
-		{
-			multiple: true,
-			onSelect: onSelect },
-		_react2['default'].createElement(
-			_beeMenus.Item,
-			{ key: '1' },
-			'\u501F\u6B3E\u5408\u540C'
-		),
-		_react2['default'].createElement(
-			_beeMenus.Item,
-			{ key: '2' },
-			'\u62B5/\u8D28\u62BC\u5408\u540C'
-		),
-		_react2['default'].createElement(
-			_beeMenus.Item,
-			{ key: '3' },
-			'\u62C5\u4FDD\u5408\u540C'
-		),
-		_react2['default'].createElement(
-			_beeMenus.Item,
-			{ key: '4' },
-			'\u8054\u4FDD\u5408\u540C'
-		),
-		_react2['default'].createElement(_beeMenus.Divider, null),
-		_react2['default'].createElement(
-			_beeMenus.Item,
-			{ key: '5' },
-			'\u5408\u540C\u5BA1\u6279'
-		),
-		_react2['default'].createElement(
-			_beeMenus.Item,
-			{ key: '6' },
-			'\u62B5/\u8D28\u62BC\u5408\u540C\u8DDF\u8E2A'
-		)
-	);
-	
-	var Demo2 = function (_Component) {
-		_inherits(Demo2, _Component);
-	
-		function Demo2() {
-			_classCallCheck(this, Demo2);
-	
-			return _possibleConstructorReturn(this, _Component.apply(this, arguments));
-		}
-	
-		Demo2.prototype.render = function render() {
-			return _react2['default'].createElement(
-				'div',
-				{ className: 'demo-input-group' },
-				_react2['default'].createElement(
-					_src2['default'],
-					null,
-					_react2['default'].createElement(
-						_src2['default'].Button,
-						null,
-						_react2['default'].createElement(
-							_beeButton2['default'],
-							null,
-							'test'
-						)
-					),
-					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' })
-				),
-				_react2['default'].createElement(
-					_src2['default'],
-					null,
-					_react2['default'].createElement(
-						_src2['default'].Button,
-						{ shape: 'border' },
-						_react2['default'].createElement(
-							_beeDropdown2['default'],
-							{
-								trigger: ['click'],
-								overlay: menu1,
-								animation: 'slide-up',
-								onVisibleChange: onVisibleChange
-							},
-							_react2['default'].createElement(
-								_beeButton2['default'],
-								{ shape: 'border' },
-								'\u5E26\u6709\u5206\u5272\u7EBF\u7684\u4E0B\u62C9 ',
-								_react2['default'].createElement(
-									'span',
-									{ className: 'uf uf-arrow-down' },
-									' '
-								)
-							)
-						)
-					),
-					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
-					_react2['default'].createElement(
-						_src2['default'].Button,
-						null,
-						_react2['default'].createElement(
-							_beeButton2['default'],
-							null,
-							_react2['default'].createElement(
-								'span',
-								{ className: 'uf uf-search' },
-								' '
-							)
-						)
-					)
-				),
-				_react2['default'].createElement(
-					_src2['default'],
-					{ simple: true },
-					_react2['default'].createElement(_beeFormControl2['default'], { style: { width: 300 }, type: 'text' }),
-					_react2['default'].createElement(
-						_src2['default'].Button,
-						{ shape: 'border' },
-						_react2['default'].createElement(
-							'span',
-							{ className: 'uf uf-search' },
-							' '
-						)
-					)
-				),
-				_react2['default'].createElement(
-					_src2['default'],
-					null,
-					_react2['default'].createElement(
-						_src2['default'].Button,
-						null,
-						_react2['default'].createElement(
-							_beeButton2['default'],
-							null,
-							'test'
-						)
-					),
-					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
-					_react2['default'].createElement(
-						_src2['default'].Button,
-						null,
-						_react2['default'].createElement(
-							_beeButton2['default'],
-							null,
-							'test'
-						)
-					)
-				)
-			);
-		};
-	
-		return Demo2;
-	}(_react.Component);
-	
-	exports['default'] = Demo2;
 	module.exports = exports['default'];
 
 /***/ })

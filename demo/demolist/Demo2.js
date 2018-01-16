@@ -7,8 +7,14 @@ import React, { Component } from 'react';
 import FormControl from 'bee-form-control';
 import Dropdown from 'bee-dropdown';
 import Button from 'bee-button';
-import Menu, { Item as MenuItem, Divider, SubMenu, MenuItemGroup } from 'bee-menus';
+import Menu from 'bee-menus';
 import InputGroup from '../../src';
+
+let MenuItem = Menu.Item;
+let Divider = Menu.Divider;
+let SubMenu = Menu.SubMenu;
+let MenuItemGroup = Menu.MenuItemGroup;
+
 
 function onSelect({ key }) {
 	console.log(`${key} selected`);
