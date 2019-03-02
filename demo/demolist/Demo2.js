@@ -66,7 +66,7 @@ class Demo2 extends Component {
 					</InputGroup.Button>
 				</InputGroup>
 				<InputGroup simple>
-					<FormControl style={{ width: 300 }} type="text" />
+					<FormControl type="text" />
 					<InputGroup.Button shape="border">
 						<span className="uf uf-search"> </span>
 					</InputGroup.Button>
