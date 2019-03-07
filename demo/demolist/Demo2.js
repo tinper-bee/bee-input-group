@@ -44,7 +44,7 @@ class Demo2 extends Component {
 			<div className="demo-input-group">
 				<InputGroup>
 					<InputGroup.Button>
-						<Button>test</Button>
+						<Button>http://</Button>
 					</InputGroup.Button>
 					<FormControl type="text" />
 				</InputGroup>
@@ -71,7 +71,7 @@ class Demo2 extends Component {
 						<span className="uf uf-search"> </span>
 					</InputGroup.Button>
 				</InputGroup>
-				<InputGroup>
+				{/* <InputGroup>
 					<InputGroup.Button>
 						<Button>test</Button>
 					</InputGroup.Button>
@@ -79,7 +79,7 @@ class Demo2 extends Component {
 					<InputGroup.Button>
 						<Button>test</Button>
 					</InputGroup.Button>
-				</InputGroup>
+				</InputGroup> */}
 			</div>
 		)
 	}

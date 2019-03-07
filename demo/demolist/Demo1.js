@@ -11,9 +11,9 @@ class Demo1 extends Component {
 		return (
 			<div className="demo-input-group">
 				<InputGroup >
-					<InputGroup.Addon >.00</InputGroup.Addon>
+					<InputGroup.Addon >https://</InputGroup.Addon>
 					<FormControl type="text" />
-					<InputGroup.Addon>.00</InputGroup.Addon>
+					<InputGroup.Addon>.com</InputGroup.Addon>
 				</InputGroup>
 				<InputGroup>
 					<InputGroup.Addon>.00</InputGroup.Addon>

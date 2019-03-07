@@ -76,7 +76,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(84);var Demo2 = __webpack_require__(94);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " InputGroup 两边是可选Addon", "code": "/**\r\n * @title InputGroup 两边是可选Addon\r\n * @description \r\n */\r\nimport React, { Component } from 'react';\r\n\nimport { InputGroup, FormControl } from 'tinper-bee';\r\n\r\nclass Demo1 extends Component {\r\n\trender () {\r\n\t\treturn (\r\n\t\t\t<div className=\"demo-input-group\">\r\n\t\t\t\t<InputGroup >\r\n\t\t\t\t\t<InputGroup.Addon >.00</InputGroup.Addon>\r\n\t\t\t\t\t<FormControl type=\"text\" />\r\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\r\n\t\t\t\t</InputGroup>\r\n\t\t\t\t<InputGroup>\r\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\r\n\t\t\t\t\t<FormControl type=\"text\" />\r\n\t\t\t\t</InputGroup>\r\n\t\t\t\t<InputGroup>\r\n\t\t\t\t\t<FormControl type=\"text\" />\r\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\r\n\t\t\t\t</InputGroup>\t\t\r\n\t        </div>\r\n\t\t)\r\n\t}\r\n}\r\n", "desc": " ", "scss_code": ".demo-input-group .u-input-group {\r\n\tmargin-bottom: 5px;\r\n\twidth:500px;\r\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " InputGroup 两边是可选Button", "code": "/**\r\n * @title InputGroup 两边是可选Button\r\n * @description \r\n */\r\n\r\nimport React, { Component } from 'react';\r\n\n\n\n\nimport { InputGroup, Menu, Button, Dropdown, FormControl } from 'tinper-bee';\r\n\r\nlet MenuItem = Menu.Item;\r\nlet Divider = Menu.Divider;\r\nlet SubMenu = Menu.SubMenu;\r\nlet MenuItemGroup = Menu.MenuItemGroup;\r\n\r\n\r\nfunction onSelect({ key }) {\r\n\tconsole.log(`${key} selected`);\r\n\r\n}\r\n\r\nfunction onVisibleChange(visible) {\r\n\tconsole.log(visible);\r\n}\r\n\r\nconst menu1 = (\r\n\t<Menu\r\n\t\tmultiple\r\n\t\tonSelect={onSelect}>\r\n\t\t<MenuItem key=\"1\">借款合同</MenuItem>\r\n\t\t<MenuItem key=\"2\">抵/质押合同</MenuItem>\r\n\t\t<MenuItem key=\"3\">担保合同</MenuItem>\r\n\t\t<MenuItem key=\"4\">联保合同</MenuItem>\r\n\t\t<Divider />\r\n\t\t<MenuItem key=\"5\">合同审批</MenuItem>\r\n\t\t<MenuItem key=\"6\">抵/质押合同跟踪</MenuItem>\r\n\t</Menu>\r\n);\r\nclass Demo2 extends Component {\r\n\trender() {\r\n\t\treturn (\r\n\t\t\t<div className=\"demo-input-group\">\r\n\t\t\t\t<InputGroup>\r\n\t\t\t\t\t<InputGroup.Button>\r\n\t\t\t\t\t\t<Button>test</Button>\r\n\t\t\t\t\t</InputGroup.Button>\r\n\t\t\t\t\t<FormControl type=\"text\" />\r\n\t\t\t\t</InputGroup>\r\n\r\n\t\t\t\t<InputGroup>\r\n\t\t\t\t\t<InputGroup.Button shape=\"border\">\r\n\t\t\t\t\t\t<Dropdown\r\n\t\t\t\t\t\t\ttrigger={['click']}\r\n\t\t\t\t\t\t\toverlay={menu1}\r\n\t\t\t\t\t\t\tanimation=\"slide-up\"\r\n\t\t\t\t\t\t\tonVisibleChange={onVisibleChange}\r\n\t\t\t\t\t\t>\r\n\t\t\t\t\t\t\t<Button shape=\"border\">带有分割线的下拉 <span className=\"uf uf-arrow-down\"> </span></Button>\r\n\t\t\t\t\t\t</Dropdown>\r\n\t\t\t\t\t</InputGroup.Button>\r\n\t\t\t\t\t<FormControl type=\"text\" />\r\n\t\t\t\t\t<InputGroup.Button>\r\n\t\t\t\t\t\t<Button><span className=\"uf uf-search\"> </span></Button>\r\n\t\t\t\t\t</InputGroup.Button>\r\n\t\t\t\t</InputGroup>\r\n\t\t\t\t<InputGroup simple>\r\n\t\t\t\t\t<FormControl type=\"text\" />\r\n\t\t\t\t\t<InputGroup.Button shape=\"border\">\r\n\t\t\t\t\t\t<span className=\"uf uf-search\"> </span>\r\n\t\t\t\t\t</InputGroup.Button>\r\n\t\t\t\t</InputGroup>\r\n\t\t\t\t<InputGroup>\r\n\t\t\t\t\t<InputGroup.Button>\r\n\t\t\t\t\t\t<Button>test</Button>\r\n\t\t\t\t\t</InputGroup.Button>\r\n\t\t\t\t\t<FormControl type=\"text\" />\r\n\t\t\t\t\t<InputGroup.Button>\r\n\t\t\t\t\t\t<Button>test</Button>\r\n\t\t\t\t\t</InputGroup.Button>\r\n\t\t\t\t</InputGroup>\r\n\t\t\t</div>\r\n\t\t)\r\n\t}\r\n}\r\n\r\n", "desc": " ", "scss_code": ".demo-input-group .u-input-group {\r\n\tmargin-bottom: 5px;\r\n\twidth:500px;\r\n}" }];
+	var Demo1 = __webpack_require__(84);var Demo2 = __webpack_require__(94);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " InputGroup 两边是可选Addon", "code": "/**\n * @title InputGroup 两边是可选Addon\n * @description \n */\nimport React, { Component } from 'react';\nimport { InputGroup, FormControl } from 'tinper-bee';\n\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t\t\t\t<InputGroup >\n\t\t\t\t\t<InputGroup.Addon >https://</InputGroup.Addon>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Addon>.com</InputGroup.Addon>\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Addon>.00</InputGroup.Addon>\n\t\t\t\t</InputGroup>\t\t\n\t        </div>\n\t\t)\n\t}\n}\n", "desc": " ", "scss_code": ".demo-input-group .u-input-group {\n\tmargin-bottom: 5px;\n\twidth:500px;\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " InputGroup 两边是可选Button", "code": "/**\n * @title InputGroup 两边是可选Button\n * @description \n */\n\nimport React, { Component } from 'react';\nimport { InputGroup, Menu, Button, Dropdown, FormControl } from 'tinper-bee';\n\nlet MenuItem = Menu.Item;\nlet Divider = Menu.Divider;\nlet SubMenu = Menu.SubMenu;\nlet MenuItemGroup = Menu.MenuItemGroup;\n\n\nfunction onSelect({ key }) {\n\tconsole.log(`${key} selected`);\n\n}\n\nfunction onVisibleChange(visible) {\n\tconsole.log(visible);\n}\n\nconst menu1 = (\n\t<Menu\n\t\tmultiple\n\t\tonSelect={onSelect}>\n\t\t<MenuItem key=\"1\">借款合同</MenuItem>\n\t\t<MenuItem key=\"2\">抵/质押合同</MenuItem>\n\t\t<MenuItem key=\"3\">担保合同</MenuItem>\n\t\t<MenuItem key=\"4\">联保合同</MenuItem>\n\t\t<Divider />\n\t\t<MenuItem key=\"5\">合同审批</MenuItem>\n\t\t<MenuItem key=\"6\">抵/质押合同跟踪</MenuItem>\n\t</Menu>\n);\nclass Demo2 extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div className=\"demo-input-group\">\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>http://</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t</InputGroup>\n\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroup.Button shape=\"border\">\n\t\t\t\t\t\t<Dropdown\n\t\t\t\t\t\t\ttrigger={['click']}\n\t\t\t\t\t\t\toverlay={menu1}\n\t\t\t\t\t\t\tanimation=\"slide-up\"\n\t\t\t\t\t\t\tonVisibleChange={onVisibleChange}\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\t<Button shape=\"border\">带有分割线的下拉 <span className=\"uf uf-arrow-down\"> </span></Button>\n\t\t\t\t\t\t</Dropdown>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button><span className=\"uf uf-search\"> </span></Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup>\n\t\t\t\t<InputGroup simple>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Button shape=\"border\">\n\t\t\t\t\t\t<span className=\"uf uf-search\"> </span>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup>\n\t\t\t\t{/* <InputGroup>\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>test</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t\t<FormControl type=\"text\" />\n\t\t\t\t\t<InputGroup.Button>\n\t\t\t\t\t\t<Button>test</Button>\n\t\t\t\t\t</InputGroup.Button>\n\t\t\t\t</InputGroup> */}\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " ", "scss_code": ".demo-input-group .u-input-group {\n\tmargin-bottom: 5px;\n\twidth:500px;\n}" }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -8049,13 +8049,13 @@
 					_react2['default'].createElement(
 						_src2['default'].Addon,
 						null,
-						'.00'
+						'https://'
 					),
 					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
 					_react2['default'].createElement(
 						_src2['default'].Addon,
 						null,
-						'.00'
+						'.com'
 					)
 				),
 				_react2['default'].createElement(
@@ -8843,7 +8843,7 @@
 						_react2['default'].createElement(
 							_beeButton2['default'],
 							null,
-							'test'
+							'http://'
 						)
 					),
 					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' })
@@ -8900,29 +8900,6 @@
 							'span',
 							{ className: 'uf uf-search' },
 							' '
-						)
-					)
-				),
-				_react2['default'].createElement(
-					_src2['default'],
-					null,
-					_react2['default'].createElement(
-						_src2['default'].Button,
-						null,
-						_react2['default'].createElement(
-							_beeButton2['default'],
-							null,
-							'test'
-						)
-					),
-					_react2['default'].createElement(_beeFormControl2['default'], { type: 'text' }),
-					_react2['default'].createElement(
-						_src2['default'].Button,
-						null,
-						_react2['default'].createElement(
-							_beeButton2['default'],
-							null,
-							'test'
 						)
 					)
 				)
